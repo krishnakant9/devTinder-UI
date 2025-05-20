@@ -1,6 +1,9 @@
 import React from "react";
+import { useSelector } from "react-redux";
+import appStore from "../utils/appstore";
 
 const Navbar = () => {
+	const user = useSelector((store) => store.user);
 	return (
 		<div className="navbar bg-base-300 shadow-sm">
 			<div className="flex-1">
