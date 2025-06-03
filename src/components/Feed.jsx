@@ -13,8 +13,9 @@ const Feed = () => {
 	const navigate = useNavigate();
 	const userData = useSelector((store) => store.user);
 	const [loading, setLoading] = useState(true);
+
 	const getFeed = async () => {
-		if (feed) return;
+		//if (feed.length>0) return;
 		try {
 			const res = await axios.get(BASE_URL + "/user/feed", {
 				withCredentials: true,
@@ -40,7 +41,7 @@ const Feed = () => {
 		)
 	}
 
-	if (userData && !feed && !setLoading)
+	if (userData && feed.length === 0 && !setLoading)
 		return (
 			<h1 className="flex text-4xl justify-center my-10">
 				No New User Found !

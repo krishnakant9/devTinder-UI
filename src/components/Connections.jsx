@@ -44,10 +44,10 @@ const Connections = () => {
 				Connections
 			</h1>
 			{(connections) && connections.map((connection) => {
-				const { firstName, lastName, photoUrl, about, skill, gender, age } =
+				const { _id,firstName, lastName, photoUrl, about, skill, gender, age } =
 					connection;
 				return (
-					<div>
+					<div key={_id}>
 						<div className=" max-w-1/2 my-5 mx-auto ">
 							<div className="card card-side bg-base-300 shadow-sm card-sm">
 								<figure>

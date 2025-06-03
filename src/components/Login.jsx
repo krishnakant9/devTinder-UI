@@ -37,7 +37,6 @@ const Login = () => {
 				{ withCredentials: true }
 			);
 			dispatch(addUser(res.data));
-			console.log(res.data.data);
 			navigate("/profile");
 		} catch {
 			//Handle Error
