@@ -23,7 +23,7 @@ function App() {
 						<Route path="profile" element={<Profile />}></Route>
 						<Route path="/requests" element={<Requests />}></Route>
 						<Route path="/connections" element={<Connections />}></Route>
-						<Route path="/privacypolicy" element={<PrivacyPolicy />}></Route>
+						<Route path="/privacy" element={<PrivacyPolicy />}></Route>
 						<Route path="/tnc" element={<TermsAndConditions />}></Route>
 						<Route path="/refund" element={<CancellationRefundPolicy />}></Route>
 						<Route path="/delivery" element={<ShippingAndDelivery />}></Route>
